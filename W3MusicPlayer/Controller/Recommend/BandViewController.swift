@@ -24,7 +24,7 @@ class BandViewController: CollectionViewController {
             let singerArray = [
                 "Halsey","Justin Bieber","Various","Billie Eilish"
             ]
-            
+              
             return (0...albumArray.count-1).map {
                 BandData(imageName: albumArray[$0],
                     title: albumArray[$0],
