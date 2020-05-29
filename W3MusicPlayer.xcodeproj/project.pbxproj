@@ -33,12 +33,18 @@
 		046EA525247A761400853D9A /* BandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046EA523247A761400853D9A /* BandViewController.xib */; };
 		046EA527247B63F500853D9A /* BandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA526247B63F500853D9A /* BandView.swift */; };
 		046EA52C247B688B00853D9A /* BandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA52B247B688B00853D9A /* BandData.swift */; };
+		04714D302480E23F00373613 /* PlaylistHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04714D2F2480E23E00373613 /* PlaylistHeader.swift */; };
+		04714D332480F30400373613 /* PlayListHeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04714D322480F30300373613 /* PlayListHeaderData.swift */; };
 		04D27B64247BB9FA00DDCE2A /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B63247BB9FA00DDCE2A /* CommonFunction.swift */; };
 		04D27B67247CB9A100DDCE2A /* SingerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B65247CB9A100DDCE2A /* SingerViewController.swift */; };
 		04D27B68247CB9A100DDCE2A /* SingerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D27B66247CB9A100DDCE2A /* SingerViewController.xib */; };
 		04D27B6A247CE72F00DDCE2A /* SingerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B69247CE72E00DDCE2A /* SingerView.swift */; };
 		04D27B6E247CF57800DDCE2A /* SingerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B6D247CF57800DDCE2A /* SingerData.swift */; };
 		04D27B70247CF9AC00DDCE2A /* SignerContainerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B6F247CF9AC00DDCE2A /* SignerContainerData.swift */; };
+		04FAA53E247E3C9D00358D74 /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAA53C247E3C9D00358D74 /* PlayListViewController.swift */; };
+		04FAA53F247E3C9D00358D74 /* PlayListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FAA53D247E3C9D00358D74 /* PlayListViewController.xib */; };
+		04FAA543247E458300358D74 /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAA541247E458300358D74 /* PlayListTableViewCell.swift */; };
+		04FAA544247E458300358D74 /* PlayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FAA542247E458300358D74 /* PlayListTableViewCell.xib */; };
 		7F167D2AC355DD746336BC95 /* Pods_W3MusicPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F8F2C9A1B81048D91EF62D /* Pods_W3MusicPlayerTests.framework */; };
 		F64DFCFB6D9B86AF4432F5B2 /* Pods_W3MusicPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90190FA55BE5861586A45C59 /* Pods_W3MusicPlayer.framework */; };
 /* End PBXBuildFile section */
@@ -84,12 +90,18 @@
 		046EA523247A761400853D9A /* BandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BandViewController.xib; sourceTree = "<group>"; };
 		046EA526247B63F500853D9A /* BandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandView.swift; sourceTree = "<group>"; };
 		046EA52B247B688B00853D9A /* BandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandData.swift; sourceTree = "<group>"; };
+		04714D2F2480E23E00373613 /* PlaylistHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeader.swift; sourceTree = "<group>"; };
+		04714D322480F30300373613 /* PlayListHeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListHeaderData.swift; sourceTree = "<group>"; };
 		04D27B63247BB9FA00DDCE2A /* CommonFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
 		04D27B65247CB9A100DDCE2A /* SingerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerViewController.swift; sourceTree = "<group>"; };
 		04D27B66247CB9A100DDCE2A /* SingerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingerViewController.xib; sourceTree = "<group>"; };
 		04D27B69247CE72E00DDCE2A /* SingerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerView.swift; sourceTree = "<group>"; };
 		04D27B6D247CF57800DDCE2A /* SingerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerData.swift; sourceTree = "<group>"; };
 		04D27B6F247CF9AC00DDCE2A /* SignerContainerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignerContainerData.swift; sourceTree = "<group>"; };
+		04FAA53C247E3C9D00358D74 /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
+		04FAA53D247E3C9D00358D74 /* PlayListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListViewController.xib; sourceTree = "<group>"; };
+		04FAA541247E458300358D74 /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
+		04FAA542247E458300358D74 /* PlayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableViewCell.xib; sourceTree = "<group>"; };
 		306E84EBB720C7C1DB3F23A7 /* Pods-W3MusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W3MusicPlayer.release.xcconfig"; path = "Target Support Files/Pods-W3MusicPlayer/Pods-W3MusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		80C1FAB05A44B812D0A1B5DC /* Pods-W3MusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W3MusicPlayer.debug.xcconfig"; path = "Target Support Files/Pods-W3MusicPlayer/Pods-W3MusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		90190FA55BE5861586A45C59 /* Pods_W3MusicPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_W3MusicPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +180,8 @@
 		040CF6332477C765008933EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				040CF6312477C760008933EB /* HomeViewController.swift */,
+				04FAA53B247D203F00358D74 /* PlayList */,
 				04D27B71247D01A100DDCE2A /* Recommend */,
 			);
 			path = Controller;
@@ -197,6 +211,7 @@
 		040CF646247A5B85008933EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04FAA540247E454900358D74 /* PlayList */,
 				04D27B72247D01D000DDCE2A /* Recommend */,
 			);
 			path = View;
@@ -215,16 +230,24 @@
 		046EA52A247B687700853D9A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04714D312480F2E800373613 /* PlayList */,
 				04D27B73247D01DA00DDCE2A /* Recommend */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		04714D312480F2E800373613 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				04714D322480F30300373613 /* PlayListHeaderData.swift */,
+			);
+			path = PlayList;
 			sourceTree = "<group>";
 		};
 		04D27B71247D01A100DDCE2A /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
 				046EA521247A757800853D9A /* CollectionKit */,
-				040CF6312477C760008933EB /* HomeViewController.swift */,
 				040CF6422477D77C008933EB /* RecommendViewController.swift */,
 				040CF6432477D77C008933EB /* RecommendViewController.xib */,
 				046EA51B247A697400853D9A /* HomeHeaderViewController.swift */,
@@ -256,6 +279,25 @@
 				04D27B6F247CF9AC00DDCE2A /* SignerContainerData.swift */,
 			);
 			path = Recommend;
+			sourceTree = "<group>";
+		};
+		04FAA53B247D203F00358D74 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				04FAA53C247E3C9D00358D74 /* PlayListViewController.swift */,
+				04FAA53D247E3C9D00358D74 /* PlayListViewController.xib */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		04FAA540247E454900358D74 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				04FAA541247E458300358D74 /* PlayListTableViewCell.swift */,
+				04FAA542247E458300358D74 /* PlayListTableViewCell.xib */,
+				04714D2F2480E23E00373613 /* PlaylistHeader.swift */,
+			);
+			path = PlayList;
 			sourceTree = "<group>";
 		};
 		7C5F44137010F7761D4E352D /* Pods */ = {
@@ -369,6 +411,8 @@
 				046EA51E247A697400853D9A /* HomeHeaderViewController.xib in Resources */,
 				040CF64A247A5DB3008933EB /* RecommendTableViewCell.xib in Resources */,
 				040CF6192477C50D008933EB /* Assets.xcassets in Resources */,
+				04FAA544247E458300358D74 /* PlayListTableViewCell.xib in Resources */,
+				04FAA53F247E3C9D00358D74 /* PlayListViewController.xib in Resources */,
 				040CF6172477C50A008933EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,10 +503,14 @@
 				046EA52C247B688B00853D9A /* BandData.swift in Sources */,
 				040CF63F2477D5FF008933EB /* BATabBarController.swift in Sources */,
 				04D27B64247BB9FA00DDCE2A /* CommonFunction.swift in Sources */,
+				04714D302480E23F00373613 /* PlaylistHeader.swift in Sources */,
+				04FAA53E247E3C9D00358D74 /* PlayListViewController.swift in Sources */,
 				040CF6122477C50A008933EB /* SceneDelegate.swift in Sources */,
 				04D27B6A247CE72F00DDCE2A /* SingerView.swift in Sources */,
 				04D27B6E247CF57800DDCE2A /* SingerData.swift in Sources */,
+				04FAA543247E458300358D74 /* PlayListTableViewCell.swift in Sources */,
 				040CF649247A5DB3008933EB /* RecommendTableViewCell.swift in Sources */,
+				04714D332480F30400373613 /* PlayListHeaderData.swift in Sources */,
 				046EA524247A761400853D9A /* BandViewController.swift in Sources */,
 				040CF63D2477D5FF008933EB /* BATabBarBadge.swift in Sources */,
 				040CF63E2477D5FF008933EB /* UIColor+ColorWithHex.swift in Sources */,

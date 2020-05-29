@@ -24,12 +24,12 @@ class BandViewController: CollectionViewController {
             let singerArray = [
                 "Halsey","Justin Bieber","Various","Billie Eilish"
             ]
-              
+            
             return (0...albumArray.count-1).map {
                 BandData(imageName: albumArray[$0],
-                    title: albumArray[$0],
-                    subTitle: singerArray[$0],
-                    like: false)
+                         title: albumArray[$0],
+                         subTitle: singerArray[$0],
+                         like: false)
             }
         }()
         
@@ -43,7 +43,10 @@ class BandViewController: CollectionViewController {
                 return CGSize(width: size.width * 0.6, height: 100)
         },
             layout: WaterfallLayout(columns: 1, spacing: 15).transposed().insetVisibleFrame(by: visibleFrameInsets),
-            animator: WobbleAnimator()
+            animator: WobbleAnimator(),
+            tapHandler: { [weak self] context in
+                print(context)
+            }
         )
     }
 }

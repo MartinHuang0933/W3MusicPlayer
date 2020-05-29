@@ -47,7 +47,7 @@ class ExampleView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         let size = titleLabel.sizeThatFits(bounds.size)
-        titleLabel.frame = CGRect(origin: CGPoint(x: 25, y: 10), size: size)
+        titleLabel.frame = CGRect(origin: CGPoint(x: 15, y: 10), size: size)
         let labelHeight = titleLabel.frame.maxY + 30
         cardView.frame = CGRect(x: 0, y: labelHeight, width: bounds.width, height: bounds.height - labelHeight)
         contentVC?.view.frame = cardView.bounds

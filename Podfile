@@ -15,5 +15,6 @@ target 'W3MusicPlayer' do
   pod 'SnapKit'
   pod 'CollectionKit'
   pod "CollectionKit/WobbleAnimator"
+  pod "ViewAnimator"
 
 end

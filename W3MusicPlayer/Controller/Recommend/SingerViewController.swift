@@ -8,6 +8,7 @@
 
 import UIKit
 import CollectionKit
+import ViewAnimator
 
 class SingerViewController: CollectionViewController {
 
