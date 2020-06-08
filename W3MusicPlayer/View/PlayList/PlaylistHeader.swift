@@ -11,9 +11,10 @@ import UIKit
 class PlaylistHeader: UIView {
     
     let KScreenWidth = UIScreen.main.bounds.size.width
-    var bannerHeight = CGFloat(210)
-    let bannerMinHeight = CGFloat(110)
+    var bannerHeight = CGFloat(230)
+    let bannerMinHeight = CGFloat(130)
     let bannerBottomPadding = CGFloat(20)
+    let playBtnWH = CGFloat(50)
     
     lazy var gradientLayer: CAGradientLayer = {
         let gradientLayer = CAGradientLayer()
@@ -47,7 +48,7 @@ class PlaylistHeader: UIView {
     lazy var playBtn : UIButton = {
         let width = 46;
         var playBtn = UIButton()
-        playBtn.layer.cornerRadius = 46*0.5
+        playBtn.layer.cornerRadius = playBtnWH * 0.5
         playBtn.backgroundColor = #colorLiteral(red: 0.9554899335, green: 0.8026843667, blue: 0.2501378059, alpha: 1)
         playBtn.setImage(UIImage(systemName: "play.fill") , for: .normal)
         playBtn.tintColor = .white
@@ -86,9 +87,9 @@ class PlaylistHeader: UIView {
         }
         
         playBtn.snp.makeConstraints { (make) -> Void in
-            make.width.height.equalTo(46)
+            make.width.height.equalTo(playBtnWH)
             make.centerY.equalTo(self.snp.bottom)
-            make.right.equalTo(self.snp_rightMargin).offset(-15)
+            make.right.equalTo(self.snp_rightMargin).offset(-12)
         }
     }
     

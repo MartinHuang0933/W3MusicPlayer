@@ -24,6 +24,7 @@
 		040CF6452477D77C008933EB /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040CF6432477D77C008933EB /* RecommendViewController.xib */; };
 		040CF649247A5DB3008933EB /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CF647247A5DB3008933EB /* RecommendTableViewCell.swift */; };
 		040CF64A247A5DB3008933EB /* RecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040CF648247A5DB3008933EB /* RecommendTableViewCell.xib */; };
+		0452137C248E1726005C75D2 /* PlayListDefalttData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452137B248E1726005C75D2 /* PlayListDefalttData.swift */; };
 		046EA518247A673700853D9A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA517247A673700853D9A /* CollectionViewController.swift */; };
 		046EA51A247A67B500853D9A /* LabelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA519247A67B500853D9A /* LabelProvider.swift */; };
 		046EA51D247A697400853D9A /* HomeHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA51B247A697400853D9A /* HomeHeaderViewController.swift */; };
@@ -82,6 +83,7 @@
 		040CF6432477D77C008933EB /* RecommendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
 		040CF647247A5DB3008933EB /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
 		040CF648247A5DB3008933EB /* RecommendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendTableViewCell.xib; sourceTree = "<group>"; };
+		0452137B248E1726005C75D2 /* PlayListDefalttData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListDefalttData.swift; sourceTree = "<group>"; };
 		046EA517247A673700853D9A /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		046EA519247A67B500853D9A /* LabelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelProvider.swift; sourceTree = "<group>"; };
 		046EA51B247A697400853D9A /* HomeHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			children = (
 				04714D322480F30300373613 /* PlayListHeaderData.swift */,
 				04714D342481100300373613 /* PlayListCellData.swift */,
+				0452137B248E1726005C75D2 /* PlayListDefalttData.swift */,
 			);
 			path = PlayList;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				040CF6102477C50A008933EB /* AppDelegate.swift in Sources */,
 				040CF63B2477D5FF008933EB /* BATabBarItem.swift in Sources */,
 				046EA52C247B688B00853D9A /* BandData.swift in Sources */,
+				0452137C248E1726005C75D2 /* PlayListDefalttData.swift in Sources */,
 				040CF63F2477D5FF008933EB /* BATabBarController.swift in Sources */,
 				04D27B64247BB9FA00DDCE2A /* CommonFunction.swift in Sources */,
 				04714D302480E23F00373613 /* PlaylistHeader.swift in Sources */,

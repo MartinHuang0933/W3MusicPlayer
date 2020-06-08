@@ -14,7 +14,7 @@ class PlayListViewController: UIViewController {
     @IBOutlet weak var mainTbl: UITableView!
     
     let KScreenWidth = UIScreen.main.bounds.size.width
-    let bannerHeight = CGFloat(210)
+    let bannerHeight = CGFloat(230)
     let header = PlaylistHeader.init()
     
     override func viewDidLoad() {
@@ -45,11 +45,13 @@ extension PlayListViewController: UITableViewDelegate , UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        100
+        PlayListDefalttData.cell20.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayListTableViewCell", for: indexPath) as! PlayListTableViewCell
+        let model = PlayListDefalttData.cell20[indexPath.row]
+        cell.setModel(model: model)
         return cell
     }
     

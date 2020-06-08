@@ -9,7 +9,7 @@
 import UIKit
 
 struct PlayListCellData {
-    let title: String
+    let title: String 
     let subTitle: String
     let like: Bool
     let time: String

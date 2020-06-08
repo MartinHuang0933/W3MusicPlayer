@@ -22,7 +22,7 @@ class RecommendViewController: CollectionViewController {
         super.viewDidLoad()
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
+    
         let examples: [(String, UIViewController.Type,CGFloat)] = [
             ("", HomeHeaderViewController.self,100),
             ("For You", BandViewController.self,400),
@@ -43,5 +43,6 @@ class RecommendViewController: CollectionViewController {
         provider = ComposedProvider(sections: [
             examplesSection
         ])
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 54, right: 0)
     }
 }

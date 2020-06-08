@@ -50,7 +50,7 @@
                             <constraint firstAttribute="height" constant="30" id="bES-fm-ehU"/>
                         </constraints>
                         <color key="tintColor" red="0.95686274510000002" green="0.80392156859999997" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <state key="normal" image="chart.bar.fill" catalog="system"/>
+                        <state key="normal" image="pause.fill" catalog="system"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8On-Ue-3ir">
                         <rect key="frame" x="199" y="23.5" width="49" height="17"/>
@@ -78,11 +78,18 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="isPlayingBtn" destination="1R0-xf-zfF" id="eje-om-3Bg"/>
+                <outlet property="likeBtn" destination="CWt-iC-hHh" id="wVX-i9-7bX"/>
+                <outlet property="subTitleLabel" destination="tRj-di-VX1" id="OCy-ya-CkO"/>
+                <outlet property="timeLabel" destination="8On-Ue-3ir" id="Ae0-pY-Ech"/>
+                <outlet property="titleLabel" destination="eC5-OW-rwE" id="KBK-QZ-rmu"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="pause.fill" catalog="system" width="58" height="64"/>
     </resources>
 </document>

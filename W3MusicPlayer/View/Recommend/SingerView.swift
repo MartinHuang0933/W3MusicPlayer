@@ -30,13 +30,12 @@ class SingerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        layer.cornerRadius = 50
+        layer.cornerRadius = 8
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 12)
         layer.shadowRadius = 10
         layer.shadowOpacity = 0.1
         layer.borderColor = UIColor(white: 0, alpha: 0.1).cgColor
-        layer.borderWidth = 0.5
         
         addSubview(bgImageView)
         addSubview(singerLabel)
