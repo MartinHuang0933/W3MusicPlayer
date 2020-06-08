@@ -35,6 +35,7 @@
 		046EA52C247B688B00853D9A /* BandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA52B247B688B00853D9A /* BandData.swift */; };
 		04714D302480E23F00373613 /* PlaylistHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04714D2F2480E23E00373613 /* PlaylistHeader.swift */; };
 		04714D332480F30400373613 /* PlayListHeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04714D322480F30300373613 /* PlayListHeaderData.swift */; };
+		04714D352481100300373613 /* PlayListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04714D342481100300373613 /* PlayListCellData.swift */; };
 		04D27B64247BB9FA00DDCE2A /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B63247BB9FA00DDCE2A /* CommonFunction.swift */; };
 		04D27B67247CB9A100DDCE2A /* SingerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B65247CB9A100DDCE2A /* SingerViewController.swift */; };
 		04D27B68247CB9A100DDCE2A /* SingerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D27B66247CB9A100DDCE2A /* SingerViewController.xib */; };
@@ -92,6 +93,7 @@
 		046EA52B247B688B00853D9A /* BandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandData.swift; sourceTree = "<group>"; };
 		04714D2F2480E23E00373613 /* PlaylistHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeader.swift; sourceTree = "<group>"; };
 		04714D322480F30300373613 /* PlayListHeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListHeaderData.swift; sourceTree = "<group>"; };
+		04714D342481100300373613 /* PlayListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCellData.swift; sourceTree = "<group>"; };
 		04D27B63247BB9FA00DDCE2A /* CommonFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
 		04D27B65247CB9A100DDCE2A /* SingerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerViewController.swift; sourceTree = "<group>"; };
 		04D27B66247CB9A100DDCE2A /* SingerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingerViewController.xib; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				04714D322480F30300373613 /* PlayListHeaderData.swift */,
+				04714D342481100300373613 /* PlayListCellData.swift */,
 			);
 			path = PlayList;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D27B67247CB9A100DDCE2A /* SingerViewController.swift in Sources */,
+				04714D352481100300373613 /* PlayListCellData.swift in Sources */,
 				046EA518247A673700853D9A /* CollectionViewController.swift in Sources */,
 				040CF6142477C50A008933EB /* ViewController.swift in Sources */,
 				040CF6102477C50A008933EB /* AppDelegate.swift in Sources */,

@@ -11,8 +11,9 @@ import UIKit
 class PlaylistHeader: UIView {
     
     let KScreenWidth = UIScreen.main.bounds.size.width
-    var bannerHeight = CGFloat(220)
-    let bannerMinHeight = CGFloat(130)
+    var bannerHeight = CGFloat(210)
+    let bannerMinHeight = CGFloat(110)
+    let bannerBottomPadding = CGFloat(20)
     
     lazy var gradientLayer: CAGradientLayer = {
         let gradientLayer = CAGradientLayer()
@@ -43,6 +44,17 @@ class PlaylistHeader: UIView {
         return followBtn
     }()
     
+    lazy var playBtn : UIButton = {
+        let width = 46;
+        var playBtn = UIButton()
+        playBtn.layer.cornerRadius = 46*0.5
+        playBtn.backgroundColor = #colorLiteral(red: 0.9554899335, green: 0.8026843667, blue: 0.2501378059, alpha: 1)
+        playBtn.setImage(UIImage(systemName: "play.fill") , for: .normal)
+        playBtn.tintColor = .white
+        playBtn.addTarget(nil, action: #selector(click), for: .touchUpInside)
+        return playBtn
+    }()
+    
     var titleLabel : UILabel = {
         var titleLabel = UILabel()
         titleLabel.frame = CGRect.init(x: 20, y: 25, width: 300, height: 75)
@@ -59,6 +71,7 @@ class PlaylistHeader: UIView {
         addSubview(headImageView)
         addSubview(titleLabel)
         addSubview(followBtn)
+        addSubview(playBtn)
         headImageView.layer.insertSublayer(gradientLayer, at: 1)
         
         followBtn.snp.makeConstraints { (make) -> Void in
@@ -70,6 +83,12 @@ class PlaylistHeader: UIView {
         titleLabel.snp.makeConstraints { (make) -> Void in
             make.bottom.equalTo(followBtn.snp_topMargin).offset(-15)
             make.left.equalTo(followBtn.snp_leftMargin)
+        }
+        
+        playBtn.snp.makeConstraints { (make) -> Void in
+            make.width.height.equalTo(46)
+            make.centerY.equalTo(self.snp.bottom)
+            make.right.equalTo(self.snp_rightMargin).offset(-15)
         }
     }
     
@@ -93,13 +112,13 @@ class PlaylistHeader: UIView {
     }
     
     func layoutChange(_ offsetY: CGFloat) {
-        if offsetY < -bannerMinHeight  {
-            let frame = CGRect.init(x: 0, y: 0, width: KScreenWidth, height: bannerHeight+(-offsetY-bannerHeight))
+        if offsetY <= -bannerMinHeight  {
+            let frame = CGRect.init(x: 0, y: 0, width: KScreenWidth, height: bannerHeight+(-offsetY-bannerHeight)-bannerBottomPadding)
             self.frame = frame
             headImageView.frame = frame
         }
         if (-offsetY > bannerHeight){
-            let frame = CGRect.init(x: 0, y: 0, width: KScreenWidth, height: bannerHeight+(-offsetY-bannerHeight))
+            let frame = CGRect.init(x: 0, y: 0, width: KScreenWidth, height: bannerHeight+(-offsetY-bannerHeight)-bannerBottomPadding)
             self.frame = frame
             headImageView.frame = frame
         }

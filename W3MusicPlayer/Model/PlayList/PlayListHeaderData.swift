@@ -9,7 +9,7 @@
 import UIKit
 
 struct PlayListHeaderData {
-  let imageName: String
-  let title: String
-  let BannerHeight: CGFloat
+    let imageName: String
+    let title: String
+    let BannerHeight: CGFloat
 }

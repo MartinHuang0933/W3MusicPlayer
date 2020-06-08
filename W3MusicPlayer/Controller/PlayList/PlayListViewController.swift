@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FluentDarkModeKit
 
 class PlayListViewController: UIViewController {
 
@@ -20,23 +21,29 @@ class PlayListViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
         let nib = UINib(nibName: "PlayListTableViewCell", bundle: nil)
         self.mainTbl.register(nib, forCellReuseIdentifier: "PlayListTableViewCell")
-        let height = view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
-        self.mainTbl.contentInset = UIEdgeInsets(top: bannerHeight-height, left: 0, bottom: 0, right: 0)
+        let statusHeight = view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+        self.mainTbl.contentInset = UIEdgeInsets(top: bannerHeight-statusHeight, left: 0, bottom: 0, right: 0)
         
         let headerData = PlayListHeaderData.init(imageName: "autumn-studio-zv3ckJKftC4-unsplash",
-                                                 title: "Mornung Coffee",
+                                                 title: "Morning Coffee",
                                                  BannerHeight: bannerHeight)
         header.populate(headerData: headerData)
-        
         self.view.addSubview(header)
     }
 }
 
 extension PlayListViewController: UITableViewDelegate , UITableViewDataSource
 {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        64
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         100
     }

@@ -5,6 +5,7 @@ PODS:
   - CollectionKit/WobbleAnimator (2.4.0):
     - CollectionKit/Core
     - YetAnotherAnimationLibrary (~> 1.4.0)
+  - FluentDarkModeKit (0.5.2)
   - SnapKit (5.0.1)
   - ViewAnimator (2.7.0)
   - YetAnotherAnimationLibrary (1.4.0)
@@ -12,22 +13,25 @@ PODS:
 DEPENDENCIES:
   - CollectionKit
   - CollectionKit/WobbleAnimator
+  - FluentDarkModeKit
   - SnapKit
   - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - CollectionKit
+    - FluentDarkModeKit
     - SnapKit
     - ViewAnimator
     - YetAnotherAnimationLibrary
 
 SPEC CHECKSUMS:
   CollectionKit: 8f01e7629185bb81072c4aa734d105df5c2d1c8b
+  FluentDarkModeKit: 78109bdbfb87c515543c0a52319da017c3843aae
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
   YetAnotherAnimationLibrary: 7f808b10c2d193dd3e82407e722fa60aa0bdff2d
 
-PODFILE CHECKSUM: 8014cd100c4d8f9b74631758c6de13f824716881
+PODFILE CHECKSUM: 9f33b8e017eb4b68118f670174bc82b9f34636a2
 
 COCOAPODS: 1.8.4

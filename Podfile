@@ -16,5 +16,6 @@ target 'W3MusicPlayer' do
   pod 'CollectionKit'
   pod "CollectionKit/WobbleAnimator"
   pod "ViewAnimator"
+  pod "FluentDarkModeKit"
 
 end

@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-W3MusicPlayer/Pods-W3MusicPlayer-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework
+${BUILT_PRODUCTS_DIR}/FluentDarkModeKit/FluentDarkModeKit.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework
 ${BUILT_PRODUCTS_DIR}/YetAnotherAnimationLibrary/YetAnotherAnimationLibrary.framework
