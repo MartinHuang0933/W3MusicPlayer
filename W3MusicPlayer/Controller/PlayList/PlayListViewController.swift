@@ -45,12 +45,12 @@ extension PlayListViewController: UITableViewDelegate , UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        PlayListDefalttData.cell20.count
+        PlayListDefaultData.cell20.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayListTableViewCell", for: indexPath) as! PlayListTableViewCell
-        let model = PlayListDefalttData.cell20[indexPath.row]
+        let model = PlayListDefaultData.cell20[indexPath.row]
         cell.setModel(model: model)
         return cell
     }

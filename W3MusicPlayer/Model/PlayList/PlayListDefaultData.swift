@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayListDefalttData: NSObject {
+class PlayListDefaultData: NSObject {
     static let cell20 : [PlayListCellData] = {
         let albumArray = [
             "Sour Candy","Rain On Me","Stuck with U","Lose Somebody","Señorita",
