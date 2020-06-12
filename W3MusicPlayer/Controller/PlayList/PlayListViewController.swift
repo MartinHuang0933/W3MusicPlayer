@@ -24,7 +24,8 @@ class PlayListViewController: UIViewController {
         let nib = UINib(nibName: "PlayListTableViewCell", bundle: nil)
         self.mainTbl.register(nib, forCellReuseIdentifier: "PlayListTableViewCell")
         let statusHeight = view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
-        self.mainTbl.contentInset = UIEdgeInsets(top: bannerHeight-statusHeight, left: 0, bottom: 0, right: 0)
+        self.mainTbl.contentInset = UIEdgeInsets(top: bannerHeight-statusHeight, left: 0, bottom: playerHeight, right: 0)
+        self.mainTbl.backgroundColor = UIColor(.dm, light: .white, dark: .red)
         
         let headerData = PlayListHeaderData.init(imageName: "autumn-studio-zv3ckJKftC4-unsplash",
                                                  title: "Morning Coffee",

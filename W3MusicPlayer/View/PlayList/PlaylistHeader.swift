@@ -69,6 +69,7 @@ class PlaylistHeader: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = UIColor(.dm, light: .white, dark: .red)
         addSubview(headImageView)
         addSubview(titleLabel)
         addSubview(followBtn)

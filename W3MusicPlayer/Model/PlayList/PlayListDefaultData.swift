@@ -9,6 +9,15 @@
 import UIKit
 
 class PlayListDefaultData: NSObject {
+    
+    struct Row {
+        var album: String
+        var singer: String
+        var time: String
+        var like: Bool
+        var play: Bool
+    }
+    
     static let cell20 : [PlayListCellData] = {
         let albumArray = [
             "Sour Candy","Rain On Me","Stuck with U","Lose Somebody","Señorita",
