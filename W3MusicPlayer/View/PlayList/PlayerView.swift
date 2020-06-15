@@ -15,7 +15,7 @@ class PlayerView: UIView {
     
     lazy var progressBar: UIView = {
         let progressBar = UIView()
-        progressBar.backgroundColor = #colorLiteral(red: 0.9693509936, green: 0.9561541677, blue: 0.9305579066, alpha: 1)
+        progressBar.backgroundColor = #colorLiteral(red: 0.893807888, green: 0.893807888, blue: 0.893807888, alpha: 1)
         return progressBar
     }()
     
@@ -121,6 +121,6 @@ class PlayerView: UIView {
     }
     
     @objc func playPauseEvent() {
-        
+        print("do playPauseEvent")
     }
 }
