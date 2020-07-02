@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EventKit
 
 class PlayerView: UIView {
 
@@ -122,5 +123,40 @@ class PlayerView: UIView {
     
     @objc func playPauseEvent() {
         print("do playPauseEvent")
+        
+        var titles : [String] = []
+        var startDates : [Date] = []
+        var endDates : [Date] = []
+
+//        //取得授權
+//        EKEventStore().requestAccess(to: .event, completion: { (status, error) in
+//
+//            print(status)
+//        })
+        
+        let eventStore = EKEventStore()
+        let calendars = eventStore.calendars(for: .event)
+
+        for calendar in calendars {
+            print(calendar.title)
+            if calendar.title == "100K" {
+
+                let oneMonthAgo = Date(timeIntervalSinceNow: -30*24*3600)
+                let oneMonthAfter = Date(timeIntervalSinceNow: +30*24*3600)
+
+                let predicate = eventStore.predicateForEvents(withStart: oneMonthAgo, end: oneMonthAfter, calendars: [calendar])
+
+                let events = eventStore.events(matching: predicate)
+
+                for event in events {
+                    titles.append(event.title)
+                    startDates.append(event.startDate)
+                    endDates.append(event.endDate)
+                }
+            }
+        }
+        print("\(titles) , \(startDates) , \(endDates)")
+        
+        
     }
 }
