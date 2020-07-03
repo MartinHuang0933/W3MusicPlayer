@@ -26,6 +26,7 @@
 		040CF649247A5DB3008933EB /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CF647247A5DB3008933EB /* RecommendTableViewCell.swift */; };
 		040CF64A247A5DB3008933EB /* RecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040CF648247A5DB3008933EB /* RecommendTableViewCell.xib */; };
 		042629D5248F8FC90065AC2E /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042629D4248F8FC90065AC2E /* PlayerView.swift */; };
+		0448EF1824AF3055007001CC /* Le_Freak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0448EF1724AF3054007001CC /* Le_Freak.mp3 */; };
 		0452137C248E1726005C75D2 /* PlayListDefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452137B248E1726005C75D2 /* PlayListDefaultData.swift */; };
 		046EA518247A673700853D9A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA517247A673700853D9A /* CollectionViewController.swift */; };
 		046EA51A247A67B500853D9A /* LabelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EA519247A67B500853D9A /* LabelProvider.swift */; };
@@ -88,6 +89,7 @@
 		040CF647247A5DB3008933EB /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
 		040CF648247A5DB3008933EB /* RecommendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendTableViewCell.xib; sourceTree = "<group>"; };
 		042629D4248F8FC90065AC2E /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		0448EF1724AF3054007001CC /* Le_Freak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Le_Freak.mp3; sourceTree = "<group>"; };
 		0452137B248E1726005C75D2 /* PlayListDefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListDefaultData.swift; sourceTree = "<group>"; };
 		046EA517247A673700853D9A /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		046EA519247A67B500853D9A /* LabelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelProvider.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		040CF6342477D5B2008933EB /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
+				0448EF1724AF3054007001CC /* Le_Freak.mp3 */,
 				040CF6352477D5FF008933EB /* BATabBarController */,
 				04D27B63247BB9FA00DDCE2A /* CommonFunction.swift */,
 			);
@@ -422,6 +425,7 @@
 				04D27B68247CB9A100DDCE2A /* SingerViewController.xib in Resources */,
 				046EA525247A761400853D9A /* BandViewController.xib in Resources */,
 				040CF61C2477C50D008933EB /* LaunchScreen.storyboard in Resources */,
+				0448EF1824AF3055007001CC /* Le_Freak.mp3 in Resources */,
 				040CF6452477D77C008933EB /* RecommendViewController.xib in Resources */,
 				046EA51E247A697400853D9A /* HomeHeaderViewController.xib in Resources */,
 				040CF64A247A5DB3008933EB /* RecommendTableViewCell.xib in Resources */,

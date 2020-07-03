@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol PlayerMainViewDelegate {
     func didClosePlayer()
+    func didPlayBtnClick()
+    func didPauseBtnClick()
+    func didNextBtnClick()
+    func didLoopBtnClick()
+    func didBackBtnClick()
 }
 
 class PlayerMainView: UIView {
@@ -22,6 +28,13 @@ class PlayerMainView: UIView {
     let itemBtnWH = CGFloat(40)
     let bigItemBtnWH = CGFloat(40)
     let btnTintColor = #colorLiteral(red: 0.9568627451, green: 0.8039215686, blue: 0.2509803922, alpha: 1)
+    
+    let avplayer = AVPlayer()
+    var playerItem:AVPlayerItem = {
+        let fileUrl = Bundle.main.url(forResource: "Le_Freak", withExtension: "mp3")!
+        let playerItem = AVPlayerItem(url: fileUrl)
+        return playerItem
+    }()
     
     // infoView
     
@@ -45,6 +58,7 @@ class PlayerMainView: UIView {
         let moreBtn = UIButton()
         moreBtn.setImage(UIImage(systemName: "ellipsis") , for: .normal)
         moreBtn.tintColor = btnTintColor
+        closeBtn.addTarget(nil, action: #selector(closePlayer), for: .touchUpInside)
         return moreBtn
     }()
     
@@ -96,6 +110,7 @@ class PlayerMainView: UIView {
         let repeatBtn = UIButton()
         repeatBtn.setImage(UIImage(systemName: "repeat") , for: .normal)
         repeatBtn.tintColor = btnTintColor
+        repeatBtn.addTarget(nil, action: #selector(loopBtnClick), for: .touchUpInside)
         return repeatBtn
     }()
     
@@ -103,6 +118,7 @@ class PlayerMainView: UIView {
         let likeBtn = UIButton()
         likeBtn.setImage(UIImage(systemName: "heart.fill") , for: .normal)
         likeBtn.tintColor = btnTintColor
+        //likeBtn.addTarget(nil, action: #selector(closePlayer), for: .touchUpInside)
         return likeBtn
     }()
     
@@ -110,6 +126,7 @@ class PlayerMainView: UIView {
         let randomBtn = UIButton()
         randomBtn.setImage(UIImage(systemName: "shuffle") , for: .normal)
         randomBtn.tintColor = btnTintColor
+        //randomBtn.addTarget(nil, action: #selector(closePlayer), for: .touchUpInside)
         return randomBtn
     }()
     
@@ -117,6 +134,7 @@ class PlayerMainView: UIView {
         let preSongBtn = UIButton()
         preSongBtn.setImage(UIImage(systemName: "backward.fill") , for: .normal)
         preSongBtn.tintColor = btnTintColor
+        preSongBtn.addTarget(nil, action: #selector(backBtnClick), for: .touchUpInside)
         return preSongBtn
     }()
     
@@ -124,6 +142,7 @@ class PlayerMainView: UIView {
         let nextSongBtn = UIButton()
         nextSongBtn.setImage(UIImage(systemName: "forward.fill") , for: .normal)
         nextSongBtn.tintColor = btnTintColor
+        nextSongBtn.addTarget(nil, action: #selector(nextBtnClick), for: .touchUpInside)
         return nextSongBtn
     }()
     
@@ -131,6 +150,7 @@ class PlayerMainView: UIView {
         let playBtn = UIButton()
         playBtn.setImage(UIImage(systemName: "play.fill") , for: .normal)
         playBtn.tintColor = btnTintColor
+        playBtn.addTarget(nil, action: #selector(playBtnClick), for: .touchUpInside)
         return playBtn
     }()
     
@@ -279,5 +299,43 @@ class PlayerMainView: UIView {
     
     @objc func closePlayer() {
         delegate.didClosePlayer()
+    }
+    
+    @objc func playBtnClick() {
+        print("playBtnClick");
+        avplayer.replaceCurrentItem(with: playerItem)
+        print(avplayer)
+        print(playerItem)
+        if avplayer.rate == 0 {
+//          PlayerButton.setImage(UIImage(named: “pause.png”), for: .normal)
+          avplayer.play()
+        }
+        else {
+//          PlayerButton.setImage(UIImage(named: “play.png”), for: .normal)
+          avplayer.pause()
+        }
+        
+        
+//        let player22 = AVPlayer()
+//        let fileUrl22 = Bundle.main.url(forResource: "Le_Freak", withExtension: "mp3")!
+//        let playerItem22 = AVPlayerItem(url: fileUrl22)
+//        player22.replaceCurrentItem(with: playerItem22)
+//        player22.play()
+    }
+    
+    @objc func pauseBtnClick() {
+        print("pauseBtnClick");
+    }
+    
+    @objc func nextBtnClick() {
+        print("nextBtnClick");
+    }
+    
+    @objc func loopBtnClick() {
+        print("loopBtnClick");
+    }
+    
+    @objc func backBtnClick() {
+        print("backBtnClick");
     }
 }

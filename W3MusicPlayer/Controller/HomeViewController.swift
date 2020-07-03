@@ -145,9 +145,30 @@ extension HomeViewController: BATabBarControllerDelegate {
 }
 
 extension HomeViewController: PlayerMainViewDelegate {
+    func didPlayBtnClick() {
+        
+    }
+    
+    func didPauseBtnClick() {
+        
+    }
+    
+    func didNextBtnClick() {
+        
+    }
+    
+    func didLoopBtnClick() {
+        
+    }
+    
+    func didBackBtnClick() {
+        
+    }
+    
     func didClosePlayer() {
         print("didClosePlayer success!");
         self.resizePlayer(isShow: false)
     }
+    
 }
 
