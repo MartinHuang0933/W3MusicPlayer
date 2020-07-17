@@ -29,7 +29,7 @@ class PlayerMainView: UIView {
     let bigItemBtnWH = CGFloat(40)
     let btnTintColor = #colorLiteral(red: 0.9568627451, green: 0.8039215686, blue: 0.2509803922, alpha: 1)
     
-    let avplayer = AVPlayer()
+    let avplayer = AVPlayer() 
     var playerItem:AVPlayerItem = {
         let fileUrl = Bundle.main.url(forResource: "Le_Freak", withExtension: "mp3")!
         let playerItem = AVPlayerItem(url: fileUrl)
